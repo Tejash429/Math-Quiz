@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthmetic Quiz</title>
+    <link rel="stylesheet" href="assests/style.css" />
+  </head>
+
+  <body onload="random()">
+    <header class="header">
+      <center>Maths Quiz</center>
+    </header>
+
+    <div class="container">
+      <main>
+        <div class="question">Place Holder</div>
+        <form id="math">
+          <input
+            type="text"
+            name="answer"
+            id="answer"
+            placeholder="Type your answer here"
+          />
+          <button type="submit" class="sub">Submit</button>
+        </form>
+      </main>
+      <div class="con">
+        <button class="new" onclick="random()">
+          <img class="svg" src="assests/img/refresh.svg" alt="New Question" />
+        </button>
+        <button class="hint" onclick="answer()">
+          <img class="svg" src="assests/img/answer.svg" alt="Answer" />
+        </button>
+      </div>
+    </div>
+    <script src="assests/script.js"></script>
+  </body>
+</html>
