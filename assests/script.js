@@ -51,7 +51,7 @@ function onSubmit(result) {
 
     const userAns = +input.value;
 
-    if (userAns == 0) {
+    if (isNaN(userAns)) {
       alert('Enter Answer');
     } else {
       const bool = result === userAns ? true : false;
