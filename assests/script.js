@@ -49,9 +49,9 @@ function onSubmit(result) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const userAns = +input.value;
+    const userAns = input.valueAsNumber;
 
-    if (userAns == 0) {
+    if (isNaN(userAns)) {
       alert('Enter Answer');
     } else {
       const bool = result === userAns ? true : false;
